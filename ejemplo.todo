@@ -1,0 +1,59 @@
+# Ejemplo TODO
+
+Este es un ejemplo de un **TODO** con su __descripcion__ y resaltado para
+`códigos` un híbrido entre el `.todo` original de `emacs` y `markdown`.
+Con algún que otro envoltorio más, para resaltar ~~errores~~, <links>, o lo
+que **prefieras**.
+
+Distingue números 1 2 3 5 
+
+Bloques de código
+```
+Como este
+``` 
+
+Permite resaltar listas con los signos habituales:
+- Uno
+- Dos
+ + Tres
+   * De 
+   + forma
+   - Indiferente
+
+# Permite resaltar títulos
+## Subtitulos
+### No distingue más niveles
+#### Todos se resaltan igual
+
+=== Títulos Plegables mediante llaves === {
+
+== Secciones también plegables == {
+  Con sus cosas
+}
+
+== Y más Secciones == {
+    Esta sección también puede plegarse bla bla bla...
+}
+}
+
+Y llegamos a la parte de listas de tareas
+
+[ ] Esta es una tarea pendiente
+[x] Esta
+[X] esta
+[v] esta más
+[V] y esta otra están completadas
+[?] Esta pide atención
+[>] Esta otra también
+[!] Esta puede ser errónea
+[^] Y esta puede estar descartada
+
+[ ] El plegado {
+    [ ] Permite 
+    [>] Crea sub tareas {
+        [x] O check
+        [ ] points
+    }
+    [ ] Que hay que manejar
+    [>] A mano
+}
