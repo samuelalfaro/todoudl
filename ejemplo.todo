@@ -1,27 +1,28 @@
 # Ejemplo TODO
 
-Este es un ejemplo de un **TODO** con su __descripcion__ y resaltado para
-`códigos` un híbrido entre el `.todo` original de `emacs` y `markdown`.
-Con algún que otro envoltorio más, para resaltar ~~errores~~, <links>, o lo
-que **prefieras**.
+Este es un ejemplo de un `TODO` con su __descripcion__ y **resaltado** para
+`códigos`. Con algún que otro envoltorio más, para resaltar <links>, ~~errores~~,
+o lo que ''prefieras''.
 
-Distingue números 1 2 3 5 
-
-Bloques de código
-```
-Como este
-``` 
+Es un híbrido entre el `orgmode.org` original de `GNU Emacs` y `markdown`.
 
 Permite resaltar listas con los signos habituales:
 - Uno
 - Dos
- + Tres
-   * De 
-   + forma
-   - Indiferente
+  + Tres
+    * De 
+    + forma
+    - Indiferente
 
-# Permite resaltar títulos
-## Subtitulos
+Distingue números 1 2 3 4 5 ...
+
+Bloques plegables de código
+```
+Como este
+``` 
+
+# También permite resaltar títulos
+## Subtítulos
 ### No distingue más niveles
 #### Todos se resaltan igual
 
@@ -34,26 +35,49 @@ Permite resaltar listas con los signos habituales:
 == Y más Secciones == {
     Esta sección también puede plegarse bla bla bla...
 }
+
 }
 
-Y llegamos a la parte de listas de tareas
+# Y llegados a las listas de tareas:
 
 [ ] Esta es una tarea pendiente
-[x] Esta
-[X] esta
-[v] esta más
-[V] y esta otra están completadas
-[?] Esta pide atención
-[>] Esta otra también
+[-] Esta puede estar en curso
+[+] Esta tarea
+[x] esta
+[X] y esta otra, pueden estar completadas
+[v] Esta tarea
+[V] y esta otra, están completadas y verificadas
+[>] Esta pide atención
+[?] Esta otra también
+[^] Y esta puede dar problemas
 [!] Esta puede ser errónea
-[^] Y esta puede estar descartada
+[~] Y esta puede estar descartada
 
 [ ] El plegado {
-    [ ] Permite 
+    [-] Permite 
     [>] Crea sub tareas {
-        [x] O check
-        [ ] points
+        [+] O check
+        [V] points {
+            Con sus propias 
+            == Notas == {
+            Bla bla bla...
+            }
+        }
     }
-    [ ] Que hay que manejar
-    [>] A mano
+    [?] Que hay que manejar
+    [!] A mano
 }
+
+Estos resaltados de tareas, no imponen ningún modo de trabajo.
+Se puede pasar directamente de:
+    [ ] Pendiente
+    [x] Completado.
+
+O llevar un flujo distinto:
+    [ ] Pendiente
+    [-] En progreso
+    [+] Hecho
+    [V] Verificado.
+
+Sólo aporta un refuerzo visual, para la forma de trabajar que cada uno considere
+más cómoda.
